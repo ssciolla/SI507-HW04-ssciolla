@@ -1,7 +1,6 @@
 
 def request_question():
     question = input("What is your question? ")
-    return question
 
 in_progress = True
 while in_progress == True:
