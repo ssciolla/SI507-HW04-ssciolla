@@ -1,11 +1,8 @@
-
+import random
 
 def request_question():
     question = input("What is your question? ")
-
-
-import random
-
+    return question
 
 def pick_answer():
     list1 = ["It is certain", "It is decidedly so",
@@ -16,3 +13,13 @@ def pick_answer():
     "Concentrate and ask again", "Don't count on it", "My reply is no",
     "My sources say no", "Outlook not so good", "Very doubtful"]
     return(random.choice(list1))
+
+in_progress = True
+while in_progress == True:
+    question = request_question()
+    if question == "quit":
+        in_progress = False
+    elif question[-1] != "?":
+        print("I'm sorry, I can only answer questions.")
+    else:
+        print(pick_answer())
