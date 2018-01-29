@@ -20,4 +20,6 @@ while in_progress == True:
     if question == "quit":
         in_progress = False
     elif question[-1] != "?":
-        print("I'm sorry, I can only answer questions.)
+        print("I'm sorry, I can only answer questions.")
+    else:
+        print(pick_answer())
