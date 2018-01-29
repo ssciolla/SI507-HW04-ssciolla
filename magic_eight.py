@@ -1,6 +1,5 @@
 import random
-def request_question():
-    question = input("What is your question? ")
+    
 
 def pick_answer():
     list1 = ["It is certain", "It is decidedly so",
